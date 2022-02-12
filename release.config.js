@@ -7,7 +7,7 @@ module.exports = {
     [
       '@semantic-release/exec',
       {
-        publishCmd: 'zip -r Wordly_v${nextRelease.version}.zip build/*',
+        publishCmd: 'cd build && zip -r ../Wordly_v${nextRelease.version}.zip * && cd ..',
       },
     ],
     [
