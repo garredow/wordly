@@ -13,7 +13,7 @@
   min-height: 30px;
   min-width: 25px;
   margin-right: 5px;
-  background-color: var(--default-color);
+  background-color: var(--letter-default-color);
   font-size: 1.6rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -21,17 +21,17 @@
   border: 2px solid transparent;
 }
 .letter.selected {
-  border-color: black;
+  border-color: var(--primary-text-color);
 }
 .letter.match {
   color: #fff;
-  background-color: var(--exact-match-color);
+  background-color: var(--letter-exact-match-color);
 }
 .letter.inWord {
   color: #fff;
-  background-color: var(--near-match-color);
+  background-color: var(--letter-word-match-color);
 }
 .letter.notFound {
   color: #fff;
-  background-color: var(--no-match-color);
+  background-color: var(--letter-no-match-color);
 }

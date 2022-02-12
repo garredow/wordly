@@ -1,4 +1,4 @@
-import { MdInfoOutline } from '@react-icons/all-files/md/MdInfoOutline';
+import { MdInvertColors } from '@react-icons/all-files/md/MdInvertColors';
 import { MdRefresh } from '@react-icons/all-files/md/MdRefresh';
 import cloneDeep from 'lodash.clonedeep';
 import { useNavKeys } from 'mai-ui/dist/hooks';
@@ -6,7 +6,9 @@ import { FunctionalComponent, h } from 'preact';
 import { useEffect, useState } from 'preact/hooks';
 import { Letter } from '../components/Letter';
 import { Letters } from '../components/Letters';
+import { useSettings } from '../contexts';
 import { LetterStatus } from '../enums';
+import { Theme } from '../models';
 import { getRandomAnswer, validateWord } from '../services/word';
 import { Icon } from '../ui-components/icon';
 import styles from './Home.module.css';
@@ -32,6 +34,8 @@ const Home: FunctionalComponent = () => {
   const [guesses, setGuesses] = useState<Guess[]>(defaultGuesses);
   const [answer, setAnswer] = useState<{ word: string; index: number }>();
 
+  const { settings, setSetting } = useSettings();
+
   const currentGuess = guesses[guesses.findIndex((a) => !a.complete) - 1]?.letters
     .map((a) => a.value)
     .join('');
@@ -41,6 +45,7 @@ const Home: FunctionalComponent = () => {
   useNavKeys(
     {
       Backspace: removeLetter,
+      SoftLeft: changeTheme,
       SoftRight: resetGame,
     },
     {
@@ -48,6 +53,10 @@ const Home: FunctionalComponent = () => {
       stopPropagation: true,
     }
   );
+
+  function changeTheme() {
+    setSetting('theme', settings.theme === Theme.Dark ? Theme.Light : Theme.Dark);
+  }
 
   function resetGame() {
     setGuesses(defaultGuesses);
@@ -115,7 +124,7 @@ const Home: FunctionalComponent = () => {
       </div>
       <Letters answer={answer?.word} guess={currentGuess} onSelectLetter={addLetter} />
       <div class={styles.navbar}>
-        <Icon icon={<MdInfoOutline />} size="20" />
+        <Icon icon={<MdInvertColors />} size="20" />
         <div>
           {`Wordly #${answer?.index}`}{' '}
           {guesses[5].complete && !guesses[5].winner ? `(${answer?.word})` : ''}

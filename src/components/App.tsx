@@ -21,30 +21,9 @@ export default function App(): VNode {
   const { settings } = useSettings();
 
   useEffect(() => {
-    // Theme
     const theme = themes.find((a) => a.id === settings.theme) || themes[0];
     for (const id in theme.values) {
       document.documentElement.style.setProperty(`--${kebabcase(id)}`, theme.values[id]);
-    }
-    document.documentElement.style.setProperty('--app-accent-color', `#${settings.accentColor}`);
-    document
-      .querySelector('meta[name="theme-color"]')
-      ?.setAttribute('content', theme.values.headerBgColor);
-
-    if (theme.settings.accentText) {
-      document.documentElement.style.setProperty('--accent-text-color', `#${settings.accentColor}`);
-    }
-    if (theme.settings.accentHighlight) {
-      document.documentElement.style.setProperty(
-        '--highlight-bg-color',
-        `#${settings.accentColor}`
-      );
-    }
-    if (theme.settings.accentHeader) {
-      document.documentElement.style.setProperty('--header-bg-color', `#${settings.accentColor}`);
-      document
-        .querySelector('meta[name="theme-color"]')
-        ?.setAttribute('content', `#${settings.accentColor}`);
     }
 
     const fontSize = {

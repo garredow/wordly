@@ -16,10 +16,7 @@
 }
 
 .row > div {
-  border: 1px solid #ccc;
-}
-
-.letters {
+  border: 1px solid var(--secondary-text-color);
 }
 
 .letters > div {
