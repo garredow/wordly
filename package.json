@@ -11,6 +11,10 @@
     "test": "jest ./tests",
     "commit": "cz"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/garredow/wordly.git"
+  },
   "dependencies": {
     "@react-icons/all-files": "^4.1.0",
     "lodash.clonedeep": "^4.5.0",
