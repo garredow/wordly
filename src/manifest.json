@@ -1,0 +1,9 @@
+{
+  "name": "wordly",
+  "short_name": "wordly",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#fff",
+  "theme_color": "#7aa86c"
+}

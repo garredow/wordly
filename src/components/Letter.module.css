@@ -1,0 +1,21 @@
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.root.match {
+  color: #fff;
+  background-color: var(--exact-match-color);
+}
+.root.inWord {
+  color: #fff;
+  background-color: var(--near-match-color);
+}
+.root.notFound {
+  color: #fff;
+  background-color: var(--no-match-color);
+}

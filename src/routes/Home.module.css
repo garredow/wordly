@@ -1,0 +1,44 @@
+.root {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 35px 35px 35px 35px 35px;
+  grid-template-rows: 35px;
+  grid-gap: 5px;
+  justify-content: center;
+  padding-bottom: 5px;
+}
+.row:first-of-type {
+  padding-top: 10px;
+}
+
+.row > div {
+  border: 1px solid #ccc;
+}
+
+.letters {
+}
+
+.letters > div {
+  height: 30px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px 5px 5px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  font-weight: 600;
+}

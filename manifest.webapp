@@ -1,0 +1,23 @@
+{
+  "id": "com.garredow.wordly",
+  "name": "Wordly",
+  "description": "Just your basic word game clone.",
+  "version": "1.0.0",
+  "launch_path": "/index.html",
+  "icons": {
+    "256": "/assets/images/icon_256.png",
+    "128": "/assets/images/icon_128.png",
+    "112": "/assets/images/icon_112.png",
+    "56": "/assets/images/icon_56.png"
+  },
+  "theme_color": "#7aa86c",
+  "developer": {
+    "name": "Garrett Downs",
+    "url": "https://garrettdowns.com"
+  },
+  "type": "privileged",
+  "permissions": {},
+  "fullscreen": true,
+  "default_locale": "en",
+  "cursor": false
+}

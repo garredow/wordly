@@ -1,0 +1,37 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 5px 10px;
+}
+
+.letter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 30px;
+  min-width: 25px;
+  margin-right: 5px;
+  background-color: var(--default-color);
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 3px;
+  border: 2px solid transparent;
+}
+.letter.selected {
+  border-color: black;
+}
+.letter.match {
+  color: #fff;
+  background-color: var(--exact-match-color);
+}
+.letter.inWord {
+  color: #fff;
+  background-color: var(--near-match-color);
+}
+.letter.notFound {
+  color: #fff;
+  background-color: var(--no-match-color);
+}
