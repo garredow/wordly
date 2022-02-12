@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/garredow/wordly/compare/v1.0.0...v1.1.0) (2022-02-12)
+
+
+### Features
+
+* add dark theme ([93bca74](https://github.com/garredow/wordly/commit/93bca7406325a1068cb3d3a5755dd0d8b9b0ed7b))
+
 # 1.0.0 (2022-02-12)
 
 
