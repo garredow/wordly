@@ -8,7 +8,8 @@
     "build": "preact build --no-prerender --no-inline-css --no-sw --no-esm && cp ./manifest.webapp ./build/manifest.webapp",
     "build:analyze": "preact build --no-prerender --no-inline-css --no-sw --no-esm --json",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
-    "test": "jest ./tests"
+    "test": "jest ./tests",
+    "commit": "cz"
   },
   "dependencies": {
     "@react-icons/all-files": "^4.1.0",
@@ -26,6 +27,9 @@
     "@types/lodash.kebabcase": "^4.1.6",
     "@typescript-eslint/eslint-plugin": "^2.25.0",
     "@typescript-eslint/parser": "^2.25.0",
+    "archiver": "^5.3.0",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-preact-pure": "^3.1.0",
     "eslint": "^6.8.0",
@@ -63,6 +67,11 @@
           "allowExpressions": true
         }
       ]
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
     }
   }
 }
