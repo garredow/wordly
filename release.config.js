@@ -4,10 +4,11 @@ module.exports = {
     '@semantic-release/commit-analyzer',
     '@semantic-release/release-notes-generator',
     '@semantic-release/changelog',
+    '@semantic-release/npm',
     [
       '@semantic-release/exec',
       {
-        publishCmd: 'cd build && zip -r ../Wordly_v${nextRelease.version}.zip * && cd ..',
+        publishCmd: './deploy/package.sh ${nextRelease.version}',
       },
     ],
     [
@@ -22,6 +23,11 @@ module.exports = {
         ],
       },
     ],
-    '@semantic-release/git',
+    [
+      '@semantic-release/git',
+      {
+        assets: ['CHANGELOG.md', 'package.json', 'package-lock.json', 'manifest.*'],
+      },
+    ],
   ],
 };

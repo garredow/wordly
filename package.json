@@ -5,10 +5,12 @@
   "license": "MIT",
   "scripts": {
     "start": "HTTPS=true preact watch --https --no-sw",
-    "build": "preact build --no-prerender --no-inline-css --no-sw --no-esm && cp ./manifest.webapp ./build/manifest.webapp",
+    "build:v2": "export BROWSERSLIST_ENV=kaios2 && preact build --no-prerender --no-inline-css --no-sw --no-esm --dest dist-v2 && cp ./manifest.webapp ./dist-v2/manifest.webapp",
+    "build:v3": "export BROWSERSLIST_ENV=kaios3 && preact build --no-prerender --no-inline-css --no-sw --no-esm --dest dist-v3 && cp ./*.webmanifest ./dist-v3/",
     "build:analyze": "preact build --no-prerender --no-inline-css --no-sw --no-esm --json",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
     "test": "jest ./tests",
+    "postversion": "./deploy/version.sh $npm_package_version",
     "commit": "cz"
   },
   "repository": {
@@ -28,6 +30,7 @@
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/exec": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
+    "@semantic-release/npm": "^9.0.0",
     "@types/enzyme": "^3.10.5",
     "@types/jest": "^26.0.8",
     "@types/lodash.clonedeep": "^4.5.6",
@@ -55,10 +58,15 @@
       "<rootDir>/tests/__mocks__/setupTests.ts"
     ]
   },
-  "browserslist": [
-    "Kaios 2.5",
-    "Firefox 48"
-  ],
+  "browserslist": {
+    "kaios2": [
+      "Kaios 2.5",
+      "Firefox 48"
+    ],
+    "kaios3": [
+      "Firefox 84"
+    ]
+  },
   "eslintConfig": {
     "parser": "@typescript-eslint/parser",
     "extends": [
