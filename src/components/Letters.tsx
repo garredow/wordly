@@ -1,7 +1,7 @@
 import { h } from 'preact';
 import { useEffect, useState } from 'preact/hooks';
 import { SelectablePriority } from '../enums';
-import { useHListNav } from '../hooks/useHListNav';
+import { useLetterScroller } from '../hooks';
 import { ifClass, joinClasses } from '../utils/classes';
 import styles from './Letters.module.css';
 
@@ -77,7 +77,7 @@ export function Letters(props: Props) {
     setLetters(defaultLetters);
   }, [props.answer]);
 
-  const { selectedId } = useHListNav({
+  const { selectedId } = useLetterScroller({
     priority: SelectablePriority.Low,
     onSelect: props.onSelectLetter,
   });
