@@ -8,7 +8,7 @@ A quick, rough clone of a popular word game.
 
 ## How to play
 
-Use the d-pad (or arrow keys) to select letters.
+Use the d-pad to switch between letters. The number keys can be used to jump to letters. For example, pressing the 6 key will cycle through "m", "n", and "o".
 
 ## Install
 
