@@ -5,8 +5,8 @@
   "license": "MIT",
   "scripts": {
     "start": "HTTPS=true preact watch --https --no-sw",
-    "build:v2": "export BROWSERSLIST_ENV=kaios2 && preact build --no-prerender --no-inline-css --no-sw --no-esm --dest dist-v2 && cp ./manifest.webapp ./dist-v2/manifest.webapp",
-    "build:v3": "export BROWSERSLIST_ENV=kaios3 && preact build --no-prerender --no-inline-css --no-sw --no-esm --dest dist-v3 && cp ./*.webmanifest ./dist-v3/",
+    "build:kaios2": "export BROWSERSLIST_ENV=kaios2 && preact build --no-prerender --no-inline-css --no-sw --no-esm --dest dist-v2 && cp ./manifest.webapp ./dist-v2/manifest.webapp",
+    "build:kaios3": "export BROWSERSLIST_ENV=kaios3 && preact build --no-prerender --no-inline-css --no-sw --no-esm --dest dist-v3 && cp ./*.webmanifest ./dist-v3/",
     "build:analyze": "preact build --no-prerender --no-inline-css --no-sw --no-esm --json",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
     "test": "jest ./tests",

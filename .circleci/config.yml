@@ -24,7 +24,8 @@ jobs:
       - checkout
       - attach_workspace:
           at: .
-      - run: npm run build
+      - run: npm run build:kaios2
+      - run: npm run build:kaios3
       - persist_to_workspace:
           root: ./
           paths:
@@ -39,7 +40,10 @@ jobs:
 workflows:
   build-test-deploy:
     jobs:
+      - setup
       - install
+          requires:
+            - setup
       - build:
           requires:
             - install
