@@ -1,3 +1,12 @@
+## [1.1.1](https://github.com/garredow/wordly/compare/v1.1.0...v1.1.1) (2022-02-13)
+
+
+### Bug Fixes
+
+* test cicd ([7f69643](https://github.com/garredow/wordly/commit/7f69643a2574518cf7359a29fd2f0edae3e0638f))
+* test cicd ([4786212](https://github.com/garredow/wordly/commit/4786212ce552c913f65aa19e5eb092873e043972))
+* test cicd ([180cec2](https://github.com/garredow/wordly/commit/180cec261fceee99b2e0b205f9a11472aec82290))
+
 # [1.1.0](https://github.com/garredow/wordly/compare/v1.0.0...v1.1.0) (2022-02-12)
 
 

@@ -36,7 +36,7 @@
   "start_url": "/index.html",
   "orientation": "portrait-primary",
   "b2g_features": {
-    "version": "1.0.0",
+    "version": "1.1.1",
     "subtitle": "A clone of a popular word game",
     "permissions": {},
     "type": "privileged",
