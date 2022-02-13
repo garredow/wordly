@@ -1,0 +1,49 @@
+{
+  "lang": "en-US",
+  "name": "Wordly",
+  "id": "wordly",
+  "short_name": "Wordly",
+  "categories": [
+    "entertainment",
+    "games"
+  ],
+  "description": "A clone of a popular word game",
+  "theme_color": "#7aa86c",
+  "background_color": "#ffffff",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "/assets/icons/icon-256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "/assets/icons/icon-128.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "/assets/icons/icon-112.png",
+      "type": "image/png",
+      "sizes": "112x112"
+    },
+    {
+      "src": "/assets/icons/icon-56.png",
+      "type": "image/png",
+      "sizes": "56x56"
+    }
+  ],
+  "start_url": "/index.html",
+  "orientation": "portrait-primary",
+  "b2g_features": {
+    "version": "1.0.0",
+    "subtitle": "A clone of a popular word game",
+    "permissions": {},
+    "type": "privileged",
+    "origin": "app://com.garredow.wordly",
+    "developer": {
+      "name": "Garrett Downs",
+      "url": "https://garrettdowns.com"
+    }
+  }
+}

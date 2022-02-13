@@ -1,7 +1,7 @@
 {
   "id": "com.garredow.wordly",
   "name": "Wordly",
-  "description": "Just your basic word game clone.",
+  "description": "A clone of a popular word game",
   "version": "1.0.0",
   "launch_path": "/index.html",
   "icons": {
@@ -18,6 +18,13 @@
   "type": "privileged",
   "permissions": {},
   "fullscreen": true,
-  "default_locale": "en",
+  "locales": {
+    "en-US": {
+      "name": "Wordly",
+      "subtitle": "A clone of a popular word game",
+      "description": "A clone of a popular word game"
+    }
+  },
+  "default_locale": "en-US",
   "cursor": false
 }
