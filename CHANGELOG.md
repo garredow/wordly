@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/garredow/wordly/compare/v1.1.1...v1.2.0) (2022-02-13)
+
+
+### Features
+
+* use number keys to jump to letters ([124abe5](https://github.com/garredow/wordly/commit/124abe56bcbec24da3c4ba43f88de8ad50e65489))
+
 ## [1.1.1](https://github.com/garredow/wordly/compare/v1.1.0...v1.1.1) (2022-02-13)
 
 
