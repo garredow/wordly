@@ -1,5 +1,7 @@
 # Wordly
 
+[![CircleCI](https://circleci.com/gh/garredow/wordly/tree/main.svg?style=svg)](https://circleci.com/gh/garredow/wordly/tree/main)
+
 A quick, rough clone of a popular word game.
 
 ![Screenshot](/promo/device_frame_half.png?raw=true)
