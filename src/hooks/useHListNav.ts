@@ -94,7 +94,6 @@ export function useHListNav({
   }
 
   function handleKeyPress(ev: KeyboardEvent): void {
-    // console.log('handleKeyPress', ev);
     const target = ev.target as HTMLElement | null;
 
     // Check if valid key

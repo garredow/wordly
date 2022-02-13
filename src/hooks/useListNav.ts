@@ -62,8 +62,7 @@ export function useListNav({
         results: Array.from(highElements).map((element) => ({
           element,
           id: element.getAttribute('data-selectable-id') || '',
-          shortcut:
-            element.getAttribute('data-selectable-shortcut') || undefined,
+          shortcut: element.getAttribute('data-selectable-shortcut') || undefined,
         })),
       };
 
@@ -76,8 +75,7 @@ export function useListNav({
         results: Array.from(mediumElements).map((element) => ({
           element,
           id: element.getAttribute('data-selectable-id') || '',
-          shortcut:
-            element.getAttribute('data-selectable-shortcut') || undefined,
+          shortcut: element.getAttribute('data-selectable-shortcut') || undefined,
         })),
       };
 
@@ -90,14 +88,12 @@ export function useListNav({
         results: Array.from(lowElements).map((element) => ({
           element,
           id: element.getAttribute('data-selectable-id') || '',
-          shortcut:
-            element.getAttribute('data-selectable-shortcut') || undefined,
+          shortcut: element.getAttribute('data-selectable-shortcut') || undefined,
         })),
       };
   }
 
   function handleKeyPress(ev: KeyboardEvent): void {
-    // console.log('handleKeyPress', ev);
     const target = ev.target as HTMLElement | null;
 
     // Check if valid key
@@ -105,8 +101,7 @@ export function useListNav({
     const dpadKeys = ['ArrowUp', 'ArrowDown', 'Enter'];
     if (
       ![...dpadKeys, ...shortcutKeys].includes(ev.key) ||
-      (shortcutKeys.includes(ev.key) &&
-        target?.tagName.toLowerCase() === 'input')
+      (shortcutKeys.includes(ev.key) && target?.tagName.toLowerCase() === 'input')
     )
       return;
 

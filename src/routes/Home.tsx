@@ -95,8 +95,6 @@ const Home: FunctionalComponent = () => {
   }
 
   function removeLetter() {
-    console.log('remove');
-
     if (guesses.some((a) => a.winner)) return;
 
     const index = guesses.findIndex((a) => !a.complete);

@@ -67,8 +67,6 @@ export function Letters(props: Props) {
       }
     });
 
-    console.log('result', result);
-
     setLetters({
       ...letters,
       ...result,
