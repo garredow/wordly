@@ -3,7 +3,10 @@
   "name": "Wordly",
   "id": "wordly",
   "short_name": "Wordly",
-  "categories": ["entertainment", "games"],
+  "categories": [
+    "entertainment",
+    "games"
+  ],
   "description": "A clone of a popular word game",
   "theme_color": "#7aa86c",
   "background_color": "#ffffff",
@@ -33,7 +36,7 @@
   "start_url": "/index.html",
   "orientation": "portrait-primary",
   "b2g_features": {
-    "version": "1.2.0",
+    "version": "1.3.0",
     "subtitle": "A clone of a popular word game",
     "permissions": {},
     "type": "privileged",
