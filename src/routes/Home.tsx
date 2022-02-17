@@ -44,7 +44,23 @@ const Home: FunctionalComponent = () => {
 
   useKeys(
     {
-      Backspace: removeLetter,
+      Backspace: () => {
+        const letters = guesses.find((a) => !a.complete)?.letters.length;
+        console.log('letters', letters);
+        if (letters === 0) {
+          return false;
+        }
+        removeLetter();
+      },
+    },
+    {
+      capture: true,
+      stopPropagation: true,
+    }
+  );
+
+  useKeys(
+    {
       SoftLeft: changeTheme,
       SoftRight: resetGame,
       ['*']: () => {
