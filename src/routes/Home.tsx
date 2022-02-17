@@ -1,13 +1,13 @@
 import { MdInvertColors } from '@react-icons/all-files/md/MdInvertColors';
 import { MdRefresh } from '@react-icons/all-files/md/MdRefresh';
 import cloneDeep from 'lodash.clonedeep';
-import { useNavKeys } from 'mai-ui/dist/hooks';
 import { FunctionalComponent, h } from 'preact';
 import { useEffect, useState } from 'preact/hooks';
 import { Letter } from '../components/Letter';
 import { Letters } from '../components/Letters';
 import { useSettings } from '../contexts';
 import { LetterStatus } from '../enums';
+import { useKeys } from '../hooks';
 import { Theme } from '../models';
 import { getRandomAnswer, validateWord } from '../services/word';
 import { Icon } from '../ui-components/icon';
@@ -42,15 +42,23 @@ const Home: FunctionalComponent = () => {
 
   useEffect(resetGame, []);
 
-  useNavKeys(
+  useKeys(
     {
       Backspace: removeLetter,
       SoftLeft: changeTheme,
       SoftRight: resetGame,
+      ['*']: () => {
+        // Required to get app into KaiStore
+        (window as any).getKaiAd({
+          publisher: 'bfa639b9-3ae0-4e79-8042-b41d65c59ea1',
+          app: 'Wordly',
+          onerror: (err: any) => console.error('Custom catch:', err),
+          onready: (ad: any) => ad.call('display'),
+        });
+      },
     },
     {
       capture: true,
-      stopPropagation: true,
     }
   );
 

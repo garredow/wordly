@@ -3,10 +3,7 @@
   "name": "Wordly",
   "id": "wordly",
   "short_name": "Wordly",
-  "categories": [
-    "entertainment",
-    "games"
-  ],
+  "categories": ["entertainment", "games"],
   "description": "A clone of a popular word game",
   "theme_color": "#7aa86c",
   "background_color": "#ffffff",
@@ -44,6 +41,9 @@
     "developer": {
       "name": "Garrett Downs",
       "url": "https://garrettdowns.com"
+    },
+    "dependencies": {
+      "ads-sdk": "1.5.5"
     }
   }
 }
