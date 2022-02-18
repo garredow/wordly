@@ -36,7 +36,7 @@
     "version": "1.2.0",
     "subtitle": "A clone of a popular word game",
     "permissions": {},
-    "type": "privileged",
+    "type": "web",
     "origin": "app://com.garredow.wordly",
     "developer": {
       "name": "Garrett Downs",
