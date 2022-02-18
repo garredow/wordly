@@ -1,3 +1,15 @@
+# [1.3.0](https://github.com/garredow/wordly/compare/v1.2.0...v1.3.0) (2022-02-17)
+
+
+### Bug Fixes
+
+* fix exiting app on back button ([a501a29](https://github.com/garredow/wordly/commit/a501a295672dfed6823c6be31dc4918f3a7f1c46))
+
+
+### Features
+
+* add required kai ads ([92f8eb6](https://github.com/garredow/wordly/commit/92f8eb6a9c488f0951194f0b8774d3b86fd4bb97))
+
 # [1.2.0](https://github.com/garredow/wordly/compare/v1.1.1...v1.2.0) (2022-02-13)
 
 
