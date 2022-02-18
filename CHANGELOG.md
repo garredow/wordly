@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/garredow/wordly/compare/v1.3.0...v1.3.1) (2022-02-18)
+
+
+### Bug Fixes
+
+* **manifest:** change type to web ([ea950c4](https://github.com/garredow/wordly/commit/ea950c483a419d02d8886c14a447a6c647be140e))
+
 # [1.3.0](https://github.com/garredow/wordly/compare/v1.2.0...v1.3.0) (2022-02-17)
 
 
