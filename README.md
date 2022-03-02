@@ -2,7 +2,7 @@
 
 [![CircleCI](https://circleci.com/gh/garredow/wordly/tree/main.svg?style=svg)](https://circleci.com/gh/garredow/wordly/tree/main)
 
-A quick, rough clone of a popular word game.
+A quick, rough clone of a popular word game. Now available on the [KaiStore](https://www.kaiostech.com/store/apps/?bundle_id=com.garrettdowns.wordly)!
 
 ![Screenshot](/promo/device_frame_half.png?raw=true)
 
